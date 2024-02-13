@@ -173,7 +173,11 @@ def main():
             fh.write(response.read())
             fh.close()
             download += 1
+<<<<<<< HEAD
    print("{}{}Z Files downloaded: {}".format(endhr, endmin, download))
+=======
+   print("{} Files downloaded: {}".format(nowdatestr, download))
+>>>>>>> e43a1c1a4ab134d9b057ac4b3cad3979b68e1f9b
    return
 
 if __name__ == '__main__':
