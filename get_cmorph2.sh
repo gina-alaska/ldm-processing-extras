@@ -1,7 +1,8 @@
 #!/bin/bash
 ##################################
 ddtt=`date +%Y%m%d`
-logDir='/home/processing/cmorph2/log'
+toolDir='/home/processing/ldm-processing-extras'
+logDir="$toolDir/log"
 (
 export PATH=$PATH:/opt/ldm/bin
 export PYTHONPATH=/usr/bin/python3
@@ -35,7 +36,6 @@ main() {
    echo "+++++ Starting CMORPH2 download - `date` ++++++"
    #
    # chg to download directory
-   toolDir='/home/processing/cmorph2'
    archiveDir='/mnt/noaa-case-study-data/cmorph2'
    cd $toolDir/download
    echo "Running: $toolDir/get_cmorph2.py"
